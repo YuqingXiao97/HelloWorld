@@ -9,10 +9,15 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock FontSize="48">Hello World</TextBlock>
+        
+        <!-- LWCT note -->
 <!-- LWCT note -->
 <!-- LWCT note -->
 <!-- LWCT note -->
 <!-- LWCT note -->
-<!-- LWCT note -->
+
+        <!--GTGO-->
+        <Button x:Name="Button_D" Content="Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="64"/>
+
     </Grid>
 </Page>
