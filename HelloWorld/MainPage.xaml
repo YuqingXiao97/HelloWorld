@@ -16,8 +16,10 @@
 <!-- LWCT note -->
 <!-- LWCT note -->
 
-        <!--GTGO-->
-        <Button x:Name="Button_D" Content="Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="64"/>
+        <!--GTGO Codes Start-->
+        <Button x:Name="Button_D" Content="This is a button" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="TextBlock_D" HorizontalAlignment="Left" Text="This is a textblock" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="48"/>
+        <!--GTGO Codes End-->
 
     </Grid>
 </Page>
