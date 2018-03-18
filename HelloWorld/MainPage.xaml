@@ -10,5 +10,8 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock FontSize="48">Hello World</TextBlock>
 <!-- LWCT note -->
+<!-- LWCT note -->
+<!-- LWCT note -->
+<!-- LWCT note -->
     </Grid>
 </Page>
