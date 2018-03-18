@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock FontSize="48">Hello World</TextBlock>
+        <TextBlock FontSize="48" Foreground="#44D76E" >Hello World</TextBlock>
         
         <!-- LWCT note -->
 <!-- LWCT note -->
@@ -17,9 +17,11 @@
 <!-- LWCT note -->
 
         <!--GTGO Codes Start-->
-        <Button x:Name="Button_D" Content="This is a button" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48"/>
-        <TextBlock x:Name="TextBlock_D" HorizontalAlignment="Left" Text="This is a textblock" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="48"/>
+        <Button x:Name="Button_D" Foreground="#0008D7" Content="This is a button" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="TextBlock_D" Foreground="#D75EC8" HorizontalAlignment="Left" Text="This is a textblock" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="48"/>
         <!--GTGO Codes End-->
+        
+        <!--TenielD change the color of "hello world","this is a button" and "this is a textblock"-->
 
     </Grid>
 </Page>
