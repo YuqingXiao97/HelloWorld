@@ -8,7 +8,98 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock FontSize="48">Hello World</TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ParallaxView Source="{Binding ElementName=listView}" VerticalShift="500">
+            <Image Source="ms-appx:///Assets/cliff.jpg" />
+        </ParallaxView>
+        <ListView x:Name="listView">
+            <ListView.Header>
+                <Hub Grid.Row="0"
+                        x:Name="NewsHub"
+                        MinHeight="200"
+                        Header="Hello World"
+                        IsTabStop="True"
+                        UseSystemFocusVisuals="True" IsHoldingEnabled="True" IsRightTapEnabled="True" IsDoubleTapEnabled="False">
+                    <HubSection MinWidth="600" Header="Latest">
+                        <DataTemplate>
+                            <Grid>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="The most recent news goes here." />
+                            </Grid>
+                        </DataTemplate>
+                    </HubSection>
 
+                    <HubSection
+                            MinWidth="250"
+                            Background="#222222"
+                            Header="Tech"
+                            IsHeaderInteractive="True"
+                            RequestedTheme="Dark">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Rich content goes here." />
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Click the &quot;See more&quot; button to go to the Tech news page." />
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection
+                            MinWidth="250"
+                            Background="#444444"
+                            Header="Sports"
+                            IsHeaderInteractive="True">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Rich content goes here." />
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Click the &quot;See more&quot; button to go to the Sports news page." />
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection
+                            MinWidth="250"
+                            Background="#333333"
+                            Header="Local"
+                            IsHeaderInteractive="True"
+                            RequestedTheme="Dark">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Rich content goes here." />
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Click the &quot;See more&quot; button to go to the Local news page." />
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection
+                            MinWidth="250"
+                            Background="#555555"
+                            Header="World"
+                            IsHeaderInteractive="True">
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Rich content goes here." />
+                                <TextBlock Style="{ThemeResource BodyTextBlockStyle}" Text="Click the &quot;See more&quot; button to go to the World news page." />
+                            </StackPanel>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </ListView.Header>
+            <ListView.Items>
+                <Rectangle Fill="Red" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Green" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Red" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Green" Height="100" Width="580"/>
+                <Rectangle Fill="Red" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Green" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Red" Height="100px" Width="580px"></Rectangle>
+                <Rectangle Fill="Green" Height="100px" Width="580px"></Rectangle>
+            </ListView.Items>
+        </ListView>
+        <MediaElement Grid.Column="1"
+AutoPlay="False"
+AreTransportControlsEnabled="True" 
+Source="ms-appx:///Assets\5156.WMV" />
     </Grid>
 </Page>
