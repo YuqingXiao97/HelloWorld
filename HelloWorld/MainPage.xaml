@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+<<<<<<< HEAD
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -101,5 +102,22 @@
 AutoPlay="False"
 AreTransportControlsEnabled="True" 
 Source="ms-appx:///Assets\5156.WMV" />
+=======
+        <TextBlock FontSize="48" Foreground="#44D76E" >Hello World</TextBlock>
+        
+        <!-- LWCT note -->
+<!-- LWCT note -->
+<!-- LWCT note -->
+<!-- LWCT note -->
+<!-- LWCT note -->
+
+        <!--GTGO Codes Start-->
+        <Button x:Name="Button_D" Foreground="#0008D7" Content="This is a button" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="TextBlock_D" Foreground="#D75EC8" HorizontalAlignment="Left" Text="This is a textblock" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="48"/>
+        <!--GTGO Codes End-->
+        
+        <!--TenielD change the color of "hello world","this is a button" and "this is a textblock"-->
+        <!--TenielD change the color of "hello world","this is a button" and "this is a textblock"-->
+>>>>>>> 660c268ec1ff14d70540c3ac8525bac455bf447c
     </Grid>
 </Page>
