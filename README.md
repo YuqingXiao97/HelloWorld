@@ -2,10 +2,7 @@
 
 ---
 Work1:
-  Every one contributes at least one line in the project.
-士大夫但是
-  Hahaha
-
-whataraeyoudoing
-
-newone1
+   Every one contributes at least one line in the project.
+-不会了吧
+-  Hahaha
++whataraeyoudoing
